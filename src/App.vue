@@ -1,7 +1,6 @@
 <template>
   <Header></Header>
   <Hero></Hero>
-  <Gallery></Gallery>
   <Pricing
   description1="bronze" description2="argent" description3="or" saison="1er avril 2020 au 30 novembre 2022" slogan="Lavage de bacs à domicile"></Pricing>
   <Steps></Steps>

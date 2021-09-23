@@ -1,191 +1,117 @@
 <template>
-    <section class="text-gray-600 body-font overflow-hidden">
+<section class="text-gray-600 body-font overflow-hidden">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">{{slogan}}</p>
-      <p class="text-purple-700 text-opacity-50 ...">{{saison}}</p>
-      <div class="flex mx-auto border-2 border-red-500 rounded overflow-hidden mt-6">
-        <button class="py-1 px-4 bg-red-500 text-white focus:outline-none">Monthly</button>
-        <button class="py-1 px-4 focus:outline-none">Annually</button>
+      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">{{prix}}</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">{{prixDescription}}</p>
+      <p class="md:w-2/3 mx-auto leading-relaxed text-base text-gray-500">{{saison}}</p>
+      <div class="flex mx-auto border-2 border-green-500 rounded overflow-hidden mt-6">
       </div>
     </div>
-    <div class="flex flex-wrap -m-4">
+    <div class="flex items-stretch  -m-3">
+      <div class="p-14"></div>
+      <div class="p-9"></div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-          <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
-          <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+          <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{option1}}</h2>
+          <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{{priceOption1}}<span class="text-lg ml-1 font-normal text-gray-500">/Bac</span></h1>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>{{ description1 }}
+            </span>{{Option1description1}}
           </p>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>{{ description2 }}
+            </span>{{Option1description2}}
           </p>
           <p class="flex items-center text-gray-600 mb-6">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>{{ description3 }}
+            </span>{{Option1description3}}
           </p>
-          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">{{Signup}}
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-        <div class="h-full p-6 rounded-lg border-2 border-red-500 flex flex-col relative overflow-hidden">
-          <span class="bg-red-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
-          <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
+        <div class="h-full p-6 rounded-lg border-2 border-green-500 flex flex-col relative overflow-hidden">
+          <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">OFFRE AVANTAGEUSE</span>
+          <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{option2}}</h2>
           <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-            <span>$38</span>
-            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+            <span>{{priceOption2}}</span>
+            <span class="text-lg ml-1 font-normal text-gray-500">/Mois</span>
           </h1>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>Vexillologist pitchfork
+            </span>{{Option2description1}}
           </p>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>Tumeric plaid portland
+            </span>{{Option2description2}}
           </p>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>Hexagon neutra unicorn
+            </span>{{Option2description3}}
           </p>
-          <p class="flex items-center text-gray-600 mb-6">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Mixtape chillwave tumeric
-          </p>
-          <button class="flex items-center mt-auto text-white bg-red-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">Button
+          <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-600 rounded">{{Signup}}
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-          <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2>
+          <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{option3}}</h2>
           <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-            <span>$56</span>
-            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+            <span>{{priceOption3}}</span>
+            <span class="text-lg ml-1 font-normal text-gray-500">/2 Mois</span>
           </h1>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>Vexillologist pitchfork
+            </span>{{Option3description1}}
           </p>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>Tumeric plaid portland
+            </span>{{Option3description2}}
           </p>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5"></path>
               </svg>
-            </span>Hexagon neutra unicorn
+            </span>{{Option3description3}}
           </p>
-          <p class="flex items-center text-gray-600 mb-2">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Vexillologist pitchfork
-          </p>
-          <p class="flex items-center text-gray-600 mb-6">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Mixtape chillwave tumeric
-          </p>
-          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">{{Signup}}
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-        </div>
-      </div>
-      <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-        <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-          <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SPECIAL</h2>
-          <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-            <span>$72</span>
-            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
-          </h1>
-          <p class="flex items-center text-gray-600 mb-2">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Vexillologist pitchfork
-          </p>
-          <p class="flex items-center text-gray-600 mb-2">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Tumeric plaid portland
-          </p>
-          <p class="flex items-center text-gray-600 mb-2">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Hexagon neutra unicorn
-          </p>
-          <p class="flex items-center text-gray-600 mb-2">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Vexillologist pitchfork
-          </p>
-          <p class="flex items-center text-gray-600 mb-6">
-            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Mixtape chillwave tumeric
-          </p>
-          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-          <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
         </div>
       </div>
     </div>
@@ -198,11 +124,32 @@
 import { defineProps } from 'vue'
 
 defineProps({
-    description1: String,
-    description2: String,
-    description3: String,
+    Option1description1: String,
+    Option1description2: String,
+    Option1description3: String,
+    Option2description1: String,
+    Option2description2: String,
+    Option2description3: String,
+    Option3description1: String,
+    Option3description2: String,
+    Option3description3: String,
+    Option4description1: String,
+    Option4description2: String,
+    Option4description3: String,
     saison: String,
-    slogan: String
+    slogan: String,
+    prix: String,
+    prixDescription: String,
+    priceOption1: String,
+    option1: String,
+    option2: String,
+    option3: String,
+    priceOption2: String,
+    priceOption3: String,
+    option4: String,
+    priceOption4: String,
+    Signup: String,
+
 })
 
 

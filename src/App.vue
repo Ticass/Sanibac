@@ -1,6 +1,9 @@
 <template>
   <Header></Header>
   <Hero punch1="Désodorise" punch2="Désinfecte" punch3="Néttoie" subtext1="" subtext2="" subtext3=""></Hero>
+  <Comparison comparisonTitle1="Avant notre arrivée"  comparisonTitle2="Après notre passage">
+
+  </Comparison>
   <Pricing
   option1="LAVAGE UNIQUE"
    priceOption1="25$"
@@ -40,6 +43,7 @@ import Hero from './components/Hero.vue'
 import Steps from './components/Steps.vue'
 import Footer from './components/Footer.vue'
 import Form from './components/Form.vue'
+import Comparison from './components/Comparison.vue'
 
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md

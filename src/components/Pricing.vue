@@ -68,7 +68,7 @@
               </svg>
             </span>{{Option2description3}}
           </p>
-          <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-600 rounded">{{Signup}}
+          <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-600 rounded" href="#formulaire">{{Signup}}
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -103,7 +103,7 @@
               </svg>
             </span>{{Option3description3}}
           </p>
-          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">{{Signup}}
+          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded" href="#formulaire">{{Signup}}
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -135,7 +135,7 @@
               </svg>
             </span>{{Option4description3}}
           </p>
-          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">{{Signup}}
+          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded" href="#formulaire">{{Signup}}
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>

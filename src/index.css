@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --green: #d1fae5;
+}
+
+.bg-emerald-gradient  {
+    background: linear-gradient(to right, var(--green), #fff, #fff, #fff, #fff, #fff, #fff, var(--green)) !important;
+}

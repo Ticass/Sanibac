@@ -1,6 +1,6 @@
 <template>
 <section id="formulaire" class="text-gray-600 body-font relative">
-  <div class="absolute inset-0 bg-gray-300">
+  <div class="absolute inset-0 bg-gray-300" id="contact">
     <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89768.65062832067!2d-73.35973994697984!3d45.323163296226554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9a20d03b56265%3A0x5040cadae4d44f0!2sSaint-Jean-sur-Richelieu%2C%20QC!5e0!3m2!1sfr!2sca!4v1629423926852!5m2!1sfr!2sca" style="filter: grayscale(0) opacity(0.5) contrast(1.2);"></iframe>
   </div>
   <form action="mailto:sanibacwmc@gmail.com" method="post" enctype="text/plain">

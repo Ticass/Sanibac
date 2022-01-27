@@ -1,15 +1,26 @@
 <template>
-<header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-    </nav>
-    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-      <img src="../assets/logo.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-14 h-14 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      <span class="ml-3 text-xl">Sanibac</span>
-    </a>
-    <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+  <nav class="flex items-center justify-between flex-wrap p-4 pl-10 shadow">
+    <div id="icon" class="flex items-center flex-shrink-0 text-white mr-20">
+      <a class="hover:bg-gray-100 ease-in duration-200 select-none cursor-pointer p-2 px-4 flex items-center">
+        <img class="mr-4" alt="logo of clean trash can" src="../assets/logo-trash.png">
+        <span class=" hover:text-black text-2xl text-gray-700 font-semibold">
+          Sanibac
+        </span>
+      </a>
     </div>
-  </div>
-</header>
+
+    <div class="block flex-grow flex items-center w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="#prix" class="inline-block text-gray-600 hover:text-black ease-in duration-200 mr-4 text-lg">
+          Prix
+        </a>
+        <a href="#info" class="inline-block text-gray-600 hover:text-black ease-in duration-200 mr-4 text-lg">
+          Plus d'infos
+        </a>
+        <a href="#contact" class="inline-block text-gray-600 hover:text-black ease-in duration-200 mr-4 text-lg">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
 </template>

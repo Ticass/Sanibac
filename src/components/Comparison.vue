@@ -6,13 +6,13 @@
         <div class="rounded-lg h-100 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="../assets/bac.jpeg">
         </div>
-        <h2 class="subpixel-antialiased title-font text-3xl font-sans font-bold text-gray-900 mt-6 mb-3">{{comparisonTitle1}}</h2>
+        <h2 class="subpixel-antialiased title-font text-3xl font-sans font-bold text-gray-900 mt-6 mb-3">{{ $t("message.comparison1")}}</h2>
       </div>
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-90 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="../assets/bac2.jpeg">
         </div>
-        <h2 class="subpixel-antialiased title-font text-3xl font-sans font-bold text-gray-900 mt-6 mb-3">{{comparisonTitle2}}</h2>
+        <h2 class="subpixel-antialiased title-font text-3xl font-sans font-bold text-gray-900 mt-6 mb-3">{{ $t("message.comparison2")}}</h2>
       </div>
     </div>
   </div>

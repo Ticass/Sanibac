@@ -18,7 +18,7 @@
       </p>
       <div class="flex items-center">
         <p class="text-2xl text-shadow inline">
-          {{punch2}}
+           {{ $t("message.punch2")}}
         </p>
       </div>
     </div>
@@ -29,7 +29,7 @@
       </p>
       <div class="flex items-center">
         <p class="text-2xl text-shadow inline">
-          {{punch3}}
+           {{ $t("message.punch3")}}
         </p>
       </div>
     </div>

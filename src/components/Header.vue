@@ -1,3 +1,4 @@
+
 <template>
   <nav class="flex items-center justify-between flex-wrap p-4 pl-10 shadow">
     <div id="icon" class="flex items-center flex-shrink-0 text-white mr-20">
@@ -12,15 +13,34 @@
     <div class="block flex-grow flex items-center w-auto">
       <div class="text-sm lg:flex-grow">
         <a href="#prix" class="inline-block text-gray-600 hover:text-black ease-in duration-200 mr-4 text-lg">
-          Prix
+          {{ $t("message.Header1") }}
         </a>
         <a href="#info" class="inline-block text-gray-600 hover:text-black ease-in duration-200 mr-4 text-lg">
-          Plus d'infos
+          {{ $t("message.Header2") }}
         </a>
         <a href="#contact" class="inline-block text-gray-600 hover:text-black ease-in duration-200 mr-4 text-lg">
-          Contact
+          {{ $t("message.Header3") }}
+        </a>
+        <a class="inline-block text-gray-600 hover:text-black ease-in duration-200 mr-4 text-lg">
+          <button @click="changeLocale()"> {{ $t("message.langue") }}</button>
         </a>
       </div>
     </div>
   </nav>
 </template>
+
+<script setup>
+import { useI18n } from "vue-i18n" 
+const { locale } = useI18n({
+    useScope: "global"
+}); 
+const changeLocale = () => {
+            const currentGlobal = locale.value;
+            if (currentGlobal == "fr"){
+                locale.value = "en"
+            } else {
+                locale.value = "fr"
+            }
+}
+
+</script>

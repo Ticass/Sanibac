@@ -1,5 +1,4 @@
 <template>
-  <language-button/>
   <Header></Header>
   <div class="bg-emerald-gradient">
   <Hero punch1="Désodorise" punch2="Désinfecte" punch3="Néttoie"></Hero>

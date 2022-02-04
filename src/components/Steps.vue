@@ -11,8 +11,8 @@
           <img class="w-12 h-12" src="../assets/icons/icon_bin.png">
         </div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Vos bacs ne sont pas propre ? Nous sommes la !</h2>
-          <p class="leading-relaxed"><b>Recyclage, poubelle ou composte</b>; Des bacs ça se sali. Apres seulement quelques jours, vos bacs peuvent acquérir de la saleté, des odeurs désagréables et une panoplie de bactéries. <b>C'est pourquoi nous somme la !</b></p>
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">{{ $t("message.Step1Title1")}}</h2>
+          <p class="leading-relaxed"><b>{{ $t("message.Step1Sub1")}}</b>; {{ $t("message.Step1Sub2")}} <b>{{ $t("message.Step1Sub3")}}</b></p>
         </div>
       </div>
     </div>
@@ -26,8 +26,8 @@
           <img class="w-12 h-12" src="../assets/icons/icon_Cleanhands.png">
         </div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Laissez les dans vos entrées, et nous nous occupons du reste !</h2>
-          <p class="leading-relaxed">Une fois votre demande confirmée, nous vous enverons un couriel pour vous informez de votre premier lavage. Dépendemment de la fréquence de nos visites, vous recevrez une notification pour vous informez de notre passage. Une fois lavés, nous ramenerons vos bacs sur le bord de la maison</p>
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">{{ $t("message.Step2Title1")}}</h2>
+          <p class="leading-relaxed">{{ $t("message.Step2Sub1")}}</p>
         </div>
       </div>
     </div>
@@ -41,8 +41,8 @@
           <img class="w-12 h-12" src="../assets/icons/icon_cleaning.png">
         </div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Désinfecte, nettoie et désodorise</h2>
-          <p class="leading-relaxed">Une fois lavés, vos bacs seront <b>propres, désinfectés et sans odeurs !</b> En effet, nos produits élimine <b>les bactéries, les odeurs et les tache tenaces</b> qui se retrouvent sur la surface de votre bac</p>
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">{{ $t("message.Step3Title1")}}</h2>
+          <p class="leading-relaxed">{{ $t("message.Step3Sub1")}} <b>{{ $t("message.Step3Sub2")}}</b> {{ $t("message.Step3Sub3")}} <b>{{ $t("message.Step3Sub4")}}</b> {{ $t("message.Step3Sub5")}}</p>
         </div>
       </div>
     </div>
@@ -56,8 +56,8 @@
          <img class="w-12 h-12" src="../assets/icons/icon_signup.png">
         </div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Inscrivez vous pour la saison 2022 !</h2>
-          <p class="leading-relaxed">Inscrivez vous, sans obligations, pour la <b>saison 2022</b> et nous vous contacterons en Mars pour confirmer votre demande</p>
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">{{ $t("message.Step4Title1")}}</h2>
+          <p class="leading-relaxed">{{ $t("message.Step4Sub1")}} <b>{{ $t("message.Step4Sub2")}}</b> {{ $t("message.Step4Sub3")}}</p>
         </div>
       </div>
     </div>

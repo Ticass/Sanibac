@@ -32,15 +32,14 @@
 <script setup>
 import { useI18n } from "vue-i18n" 
 const { locale } = useI18n({
-    useScope: "global"
+  useScope: "global"
 }); 
 const CheckLocale = () => {
-            
-            if (locale.value == "fr"){
-                return "Envoyer"
-            } else {
-                return "Send"
-            }
+  if (locale.value == "fr"){
+    return "Envoyer"
+  } else {
+    return "Send"
+  }
 }
 
 </script>

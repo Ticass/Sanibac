@@ -40,6 +40,7 @@
 .background-tint {
   background-color: rgba(0, 0, 0, .5) !important; /* Tint color */
   background-blend-mode: multiply !important;
+  flex-wrap: wrap;
 }
 </style>
 
@@ -56,4 +57,3 @@ defineProps({
     subtext3: String
 })
 </script>
-

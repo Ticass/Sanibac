@@ -29,6 +29,14 @@
   </nav>
 </template>
 
+<style>
+  @media (max-width: 768px) {
+    #icon {
+      display: none;
+    }
+  }
+</style>
+
 <script setup>
 import { useI18n } from "vue-i18n" 
 const { locale } = useI18n({

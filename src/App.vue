@@ -17,7 +17,7 @@
          Option2description2="2 visites par mois"
           Option2description3="5$ pour un bac additionel"
            option3="BIMENSUEL"
-            priceOption3="$30"
+            priceOption3="30$"
              Option3description1="2 bacs de votre choix inclu"
               Option3description2="2 visites par mois"
                Option3description3="9$ pour un bac additionel"

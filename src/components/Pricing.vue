@@ -10,7 +10,7 @@
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{ $t("message.option1")}}</h2>
-          <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{{priceOption1}}</h1>
+          <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{{ $t("message.priceOption1")}}</h1>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@
           <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">OFFRE AVANTAGEUSE</span>
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{ $t("message.option2")}}</h2>
           <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-            <span>{{priceOption2}}</span>
+            <span>{{ $t("message.priceOption2")}}</span>
             <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
           </h1>
           <p class="flex items-center text-gray-600 mb-2">
@@ -79,7 +79,7 @@
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{ $t("message.option3")}}</h2>
           <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-            <span>{{priceOption3}}</span>
+            <span>{{ $t("message.priceOption3")}}</span>
             <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
           </h1>
           <p class="flex items-center text-gray-600 mb-2">
@@ -110,10 +110,11 @@
           </button>
         </div>
       </div>
+<!--      RICO ENLEVE CETTE CARTE LA STP PI CENTRE LE TOUT, THANK YOU MON BOY ON SFUME UN GROS BAT SOON-->
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{ $t("message.option4")}}</h2>
-         <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{{ priceOption4 }}</h1>
+         <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{{ $t("message.priceOption4")}}</h1>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">

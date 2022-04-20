@@ -5,31 +5,8 @@
   <Comparison comparisonTitle1="Avant notre arrivée"  comparisonTitle2="Après notre passage">
 
   </Comparison>
-  <Pricing
-  option1="LAVAGE UNIQUE"
-   priceOption1="25$"
-    Option1description1="1 bac de votre choix inclu"
-     Option1description2="1 visite au mois de votre choix"
-      Option1description3="15$ pour un bac additionel"
-       option2="MENSUEL"
-       priceOption2="20$"
-        Option2description1="2 bacs de votre choix inclus"
-         Option2description2="2 visites par mois"
-          Option2description3="5$ pour un bac additionel"
-           option3="BIMENSUEL"
-            priceOption3="30$"
-             Option3description1="2 bacs de votre choix inclu"
-              Option3description2="2 visites par mois"
-               Option3description3="9$ pour un bac additionel"
-               option4="SAISON COMPLÈTE"
-               priceOption4="160$"
-               Option4description1="2 bacs de votre choix inclus"
-               Option4description2="lavage de vos bacs chaque mois"
-               Option4description3="40$ pour un bac additionel"
-                   prix="Tarifs"
-                    prixDescription=""
-                    Signup="S'inscrire"
-   saison="1er avril 2022 au 30 novembre 2022" slogan="Lavage de bacs à domicile"></Pricing>
+  <Pricing>
+  </Pricing>
   <Steps></Steps>
   </div>
   <Form></Form>

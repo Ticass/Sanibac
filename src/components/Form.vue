@@ -9,6 +9,10 @@
       <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">{{ $t("message.FormTitle")}}</h2>
       <p class="leading-relaxed mb-5 text-gray-600">{{ $t("message.FormTitle2")}}</p>
       <div class="relative mb-4">
+        <label for="name" class="leading-7 text-sm text-gray-600">{{ $t("message.FormName")}}</label>
+        <input v-model="name" type="name" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div>
+      <div class="relative mb-4">
         <label for="email" class="leading-7 text-sm text-gray-600">{{ $t("message.FormSub1")}}</label>
         <input v-model="email" type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
       </div>
@@ -20,7 +24,7 @@
         <label for="message" class="leading-7 text-sm text-gray-600">{{ $t("message.FormSub3")}}</label>
         <textarea v-model="message" id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
       </div>
-      <input @click="GrabFormData()" type="" class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><input>
+      <div @click="GrabFormData()" class="text-white bg-green-500 border-0 py-6 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">{{ $t("message.SubmitForm")}}</div>
       <p class="text-xs text-gray-500 mt-3">{{ $t("message.FormSub4")}} <br><b> {{ $t("message.FormSub5")}}</b>.</p>
     </div>
   </div>
@@ -31,9 +35,11 @@
 
 <script setup>
 import {ref, onMounted } from 'vue';
-import sgMail from "@sendgrid/mail";
+import axios from "axios";
 
 //Refs Setups
+let name = ref("")
+
 let email = ref("")
 
 let phone = ref("")
@@ -52,24 +58,15 @@ onMounted(()=> {
 
 
 const GrabFormData = () => {
-
-  sgMail.setApiKey(import.meta.env.VITE_WEB3_SENDGRID_API_KEY)
-  const msg = {
-    to: 'sanibacwmc@gmail.com', // Change to your recipient
-    from: `sanibac.noreply@gmail.com`, // Change to your verified sender
-    subject: 'Nouvelle demande de service chez Sanibac',
-    text: `Numero de telephone: ${phone} Email: ${email} Message: ${message}`,
-    html: `<strong>Numero de telephone: ${phone} <br/> ${message}</strong>`,
-  }
-  sgMail
-      .send(msg)
-      .then(() => {
-        console.log('Email sent')
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-
-}
+    axios.post('https://formspree.io/f/mrgjynon',{
+      name: name.value,
+      from: email.value,
+      _subject: `Nouvelle demande de service chez Sanibac`,
+      message: `Numero de telephone: ${phone.value}
+       Message: ${message.value}`
+        },
+    ).then((response) => {
+    alert("Email Envoyé")
+    })};
 
 </script>

@@ -9,9 +9,12 @@ library.add(far);
 import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();
 import { createApp } from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import App from './App.vue'
 import './index.css'
 import { createI18n } from 'vue-i18n'
+
 
 
 // 1. Ready translated locale messages
@@ -71,6 +74,9 @@ const messages = {
         Header2: 'Information',
         Header3: 'Contact',
         SignUp: 'Sign Up',
+        FormName: 'First name and last name',
+        SubmitForm: 'Submit',
+        EmailSent: 'Email Sent',
 
 
       }
@@ -126,7 +132,10 @@ const messages = {
         Header1: 'Forfaits',
         Header2: 'Plus D\'infos',
         Header3: 'Contact',
-        SignUp: 'S\'inscrire'
+        SignUp: 'S\'inscrire',
+        FormName: 'Nom complet',
+        SubmitForm: 'Envoyer',
+        EmailSent: 'Email Envoyé'
         
       }
     }
@@ -145,4 +154,5 @@ const messages = {
 
 const app = createApp(App)
 app.use(i18n)
+app.use(VueAxios, axios);
 app.mount('#app')

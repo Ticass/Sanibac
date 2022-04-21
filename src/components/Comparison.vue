@@ -22,9 +22,5 @@
 
 <script setup>
 
-defineProps({
-        comparisonTitle1: String,
-        comparisonTitle2: String,
-});
 
 </script>

@@ -9,9 +9,12 @@ library.add(far);
 import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();
 import { createApp } from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import App from './App.vue'
 import './index.css'
 import { createI18n } from 'vue-i18n'
+
 
 
 // 1. Ready translated locale messages
@@ -19,6 +22,11 @@ import { createI18n } from 'vue-i18n'
 const messages = {
     en: {
       message: {
+        //PRICES
+        priceOption1: '32$',
+        priceOption2: '27$',
+        priceOption3: '34$',
+        //PRICES END
         langue: 'Français',
         punch1: 'Deodorizes',
         punch2: 'Disinfects',
@@ -30,19 +38,15 @@ const messages = {
         option1: 'SINGLE WASH',
         option1Description1: '1 bin of your choice included',
         option1Description2: '1 visit per month',
-        option1Description3: '15$ for an additional bin',
+        option1Description3: '22$ for an additional bin',
         option2: 'MONTHLY',
         option2Description1: '2 bins of your choice included',
         option2Description2: '2 visits per month',
-        option2Description3: '5$ for an additional bin',
+        option2Description3: '8$ for an additional bin',
         option3: 'BIMONTHLY',
         option3Description1: '2 bins of your choice included',
         option3Description2: '2 visits per month',
         option3Description3: '9$ for an additional bin',
-        option4: 'FULL SEASON',
-        option4Description1: '2 bins of your choice included',
-        option4Description2: 'cleaning of your bins every month',
-        option4Description3: '40$ for an additional bin',
         Step1Title1: 'Your bins are dirty ? We\'re here to help',
         Step1Sub1: 'Whether it\'s a trash bin, a recycling bin or a compost bin',
         Step1Sub2: 'It can get dirty. After only a few days, your bins can start to smell and can become a major germ spreader',
@@ -70,6 +74,9 @@ const messages = {
         Header2: 'Information',
         Header3: 'Contact',
         SignUp: 'Sign Up',
+        FormName: 'First name and last name',
+        SubmitForm: 'Submit',
+        EmailSent: 'Email Sent',
 
 
       }
@@ -85,21 +92,20 @@ const messages = {
         price: 'Forfaits',
         priceDescription: '1er avril 2022 au 30 novembre 2022',
         option1: 'LAVAGE UNIQUE',
+        priceOption1: '32$',
         option1Description1: '1 bac de votre choix inclu',
         option1Description2: '1 visite au mois de votre choix',
-        option1Description3: '15$ pour un bac additionel',
+        option1Description3: '22$ pour un bac additionel',
         option2: 'À-CHAQUE MOIS',
+        priceOption2: '27$',
         option2Description1: '2 bacs de votre choix inclus',
         option2Description2: '2 visites par mois',
-        option2Description3: '5$ pour un bac additionel',
+        option2Description3: '8$ pour un bac additionel',
         option3: 'À-CHAQUE 2 MOIS',
+        priceOption3: '34$',
         option3Description1: '2 bacs de votre choix inclu',
-        option3Description2: '2 visites par mois',
+        option3Description2: '2 visites un mois sur deux',
         option3Description3: '9$ pour un bac additionel',
-        option4: 'SAISON COMPLÈTE',
-        option4Description1: '2 bacs de votre choix inclus',
-        option4Description2: 'lavage de vos bacs chaque mois',
-        option4Description3: '40$ pour un bac additionel',
         Step1Title1: 'Vos bacs ne sont pas propres ? Nous sommes là !',
         Step1Sub1: 'Recyclage, poubelle ou composte',
         Step1Sub2: 'Des bacs ça se salit. Apres seulement quelques jours, vos bacs peuvent acquérir de la saleté, des odeurs désagréables et une panoplie de bactéries.',
@@ -126,7 +132,10 @@ const messages = {
         Header1: 'Forfaits',
         Header2: 'Plus D\'infos',
         Header3: 'Contact',
-        SignUp: 'S\'inscrire'
+        SignUp: 'S\'inscrire',
+        FormName: 'Nom complet',
+        SubmitForm: 'Envoyer',
+        EmailSent: 'Email Envoyé'
         
       }
     }
@@ -145,4 +154,5 @@ const messages = {
 
 const app = createApp(App)
 app.use(i18n)
+app.use(VueAxios, axios);
 app.mount('#app')

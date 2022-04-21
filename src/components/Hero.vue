@@ -46,14 +46,4 @@
 
 
 <script setup>
-import { defineProps } from 'vue'
-
-defineProps({
-    punch1: String, 
-    punch2: String,
-    punch3: String,
-    subtext1: String,
-    subtext2: String,
-    subtext3: String
-})
 </script>

@@ -32,7 +32,7 @@
               </svg>
             </span>{{ $t("message.option1Description3")}}
           </p>
-          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded"><a href="#contact">{{ $t("message.SignUp")}}</a>
+          <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded" href="#contact"><a href="#contact">{{ $t("message.SignUp")}}</a>
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -68,7 +68,7 @@
               </svg>
             </span>{{ $t("message.option2Description3")}}
           </p>
-          <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-600 rounded"><a href="#contact">{{ $t("message.SignUp")}}</a>
+          <button class="flex items-center mt-auto text-white bg-green-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-green-600 rounded" href="#contact"><a href="#contact">{{ $t("message.SignUp")}}</a>
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -117,36 +117,6 @@
 
 
 <script setup>
-import { defineProps } from 'vue'
-
-defineProps({
-    Option1description1: String,
-    Option1description2: String,
-    Option1description3: String,
-    Option2description1: String,
-    Option2description2: String,
-    Option2description3: String,
-    Option3description1: String,
-    Option3description2: String,
-    Option3description3: String,
-    Option4description1: String,
-    Option4description2: String,
-    Option4description3: String,
-    saison: String,
-    slogan: String,
-    prix: String,
-    prixDescription: String,
-    priceOption1: String,
-    option1: String,
-    option2: String,
-    option3: String,
-    priceOption2: String,
-    priceOption3: String,
-    option4: String,
-    priceOption4: String,
-    Signup: String,
-
-})
 
 
 </script>

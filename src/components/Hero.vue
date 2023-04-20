@@ -1,49 +1,56 @@
 <template>
-
-  <div class="background-tint bg-clean-house py-60 flex gap-10 lg:gap-40 justify-center items-center">
-    <div class="bg-green-100 rounded-full p-2 pr-4 flex justify-center">
-      <p class="p-2 mr- select-none">
-        <img alt="clorox" src="../assets/spray.png" width="45" height="45"/>
-      </p>
-      <div class="flex items-center">
-        <p class="text-2xl text-shadow inline">
-          {{ $t("message.punch1")}}
-        </p>
-      </div>
+  <div class="relative py-60 flex justify-center items-center">
+    <div class="absolute inset-0 w-full h-full">
+      <carousel :images="images" class="blur"></carousel>
+      <div class="bg-black opacity-50 w-full h-full absolute inset-0"></div>
     </div>
-
-    <div class="bg-green-100 rounded-full p-2 pr-4 flex justify-center">
-      <p class="p-2 mr- select-none">
-        <img alt="clorox" src="../assets/cleaner.png" width="45" height="45"/>
-      </p>
-      <div class="flex items-center">
-        <p class="text-2xl text-shadow inline">
-           {{ $t("message.punch2")}}
-        </p>
-      </div>
-    </div>
-
-    <div class="bg-green-100 rounded-full p-2 pr-4 flex justify-center">
-      <p class="p-2 mr- select-none">
-        <img alt="clorox" src="../assets/wipe.png" width="45" height="45"/>
-      </p>
-      <div class="flex items-center">
-        <p class="text-2xl text-shadow inline">
-           {{ $t("message.punch3")}}
-        </p>
-      </div>
+    <div class="relative z-10 text-white max-w-2xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-6">Sanibac</h1>
+      <p class="text-lg mb-10">{{ $t("message.Step1Sub2")}}</p>
+      <a href="#" class="border border-white text-white py-3 px-8 inline-block hover:bg-white hover:text-clean-house transition ease-in-out duration-300">Learn More</a>
     </div>
   </div>
 </template>
 
 <style>
-.background-tint {
-  background-color: rgba(0, 0, 0, .5) !important; /* Tint color */
-  background-blend-mode: multiply !important;
-  flex-wrap: wrap;
-}
+  .bg-clean-house {
+    background-color: #95BF74;
+  }
+
+  .text-clean-house {
+    color: #95BF74;
+  }
+
+  .border-clean-house {
+    border-color: #95BF74;
+  }
+
+  .hover\:bg-white:hover {
+    background-color: #fff;
+  }
+
+  .hover\:text-clean-house:hover {
+    color: #95BF74;
+  }
 </style>
 
 
-<script setup>
+<script>
+import Carousel from "../components/Carousel.vue";
+
+export default {
+  name: "HeroBanner",
+  components: {
+    Carousel,
+  },
+  data() {
+    return {
+      images: [
+        "src/assets/home-clean.png",
+        "src/assets/home-clean2.png",
+        "src/assets/home-clean3.png",
+      ],
+    };
+  },
+};
 </script>

@@ -34,6 +34,7 @@
 
 
 <script setup>
+import SuccessAlert from './SuccessAlert.vue';
 import {ref, onMounted } from 'vue';
 import axios from "axios";
 

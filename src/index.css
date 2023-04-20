@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind forms;
+
+.bg-custom {
+    background-color: #95BF74;
+  }
+
+  .bg-custom-bubbles {
+    background: radial-gradient(circle at bottom left, #e4f7ba 0%, #95bf74 35%, #3baf6e 50%, #4db6ac 70%, #a1e9d4 100%);
+  }  
+
+.bg-graycustom {
+    background-color: #F2F2F2;
+}
+
+.second-color {
+    text-color:#304620
+}
+

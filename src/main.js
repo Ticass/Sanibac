@@ -77,8 +77,8 @@ const messages = {
         FormName: 'First name and last name',
         SubmitForm: 'Submit',
         EmailSent: 'Email Sent',
-
-
+        banner1title: 'Vos bacs ne sont pas propres ?',
+        banner1subtitle: 'Nous sommes là !'
       }
     },
     fr: {
@@ -106,15 +106,15 @@ const messages = {
         option3Description1: '2 bacs de votre choix inclu',
         option3Description2: '2 visites un mois sur deux',
         option3Description3: '9$ pour un bac additionel',
-        Step1Title1: 'Vos bacs ne sont pas propres ? Nous sommes là !',
+        Step1Title1: 'Vos bacs ne sont pas propres ?',
         Step1Sub1: 'Recyclage, poubelle ou composte',
         Step1Sub2: 'Des bacs ça se salit. Apres seulement quelques jours, vos bacs peuvent acquérir de la saleté, des odeurs désagréables et une panoplie de bactéries.',
         Step1Sub3: 'C\'est pourquoi nous sommes là !',
         Step2Title1: 'Laissez-les dans votre entrée, et nous nous occupons du reste !',
-        Step2Sub1: 'Une fois votre demande confirmée, nous vous enverrons un courriel pour vous informer de votre premier lavage. En fonction de la fréquence de nos visites, vous recevrez une notification pour vous aviser de notre passage. Une fois lavés, nous replacerons vos bacs sur le bord de votre maison.',
-        Step3Title1: 'Désinfecte, nettoie et désodorise',
-        Step3Sub1: 'Une fois lavés, vos bacs seront',
-        Step3Sub2: 'propres, désinfectés et sans odeur !',
+        Step2Sub1: 'Nous prenons tout, dès que votre demande est confirmée, nous vous enverrons un e-mail pour vous informer de votre premier lavage.',
+        Step2Sub2: 'Tout dépendant de la fréquence de nos visites, vous recevrez une notification vous informant de notre visite.',
+        Step3Title1: 'Désinfection, nettoyage et désodorisation',
+        Step3Sub1: 'Une fois lavés, vos bacs seront retourné en bordure de votre domicile \n propres, désinfectés et sans odeur !',
         Step3Sub3: 'Nos produits éliminent les',
         Step3Sub4: 'bactéries, les odeurs et les taches tenaces',
         Step3Sub5: 'qui se retrouvent à l\'intérieur de votre bac.',
@@ -135,7 +135,11 @@ const messages = {
         SignUp: 'S\'inscrire',
         FormName: 'Nom complet',
         SubmitForm: 'Envoyer',
-        EmailSent: 'Email Envoyé'
+        EmailSent: 'Email Envoyé',
+        banner1title: 'Vos bacs ne sont pas propres ?',
+        banner1subtitle: 'Nous sommes là !',
+        didYouKnow: 'Le saviez vous ?',
+        didYouKnowSub: 'Apres seulement quelques jours, vos bacs peuvent acquérir de la saleté, des odeurs désagréables et une panoplie de bactéries. \n En investissant dans notre service de nettoyage de bacs, vous pouvez profiter d\'un environnement plus sain et plus agréable, sans avoir à vous soucier de cette corvée. Ne laissez pas la saleté s\'accumuler dans vos bacs, contactez-nous dès maintenant pour en savoir plus sur nos services de nettoyage professionnels.',
         
       }
     }
@@ -146,7 +150,7 @@ const messages = {
     locale: 'fr', // set locale
     fallbackLocale: 'en', // set fallback locale
     messages,
-    legacy: true // set locale messages
+    legacy: false // set locale messages
     // If you need to specify other options, you can set other options
     // ...
   })
